@@ -76,11 +76,11 @@ WSGI_APPLICATION = 'inventory_management.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',  # PostgreSQL backend
+        'ENGINE': 'django.contrib.gis.db.backends.postgis',  # PostgreSQL backend
         'NAME': 'mydatabase',                       # Database name
         'USER': 'myuser',                           # Database user
         'PASSWORD': 'mypassword',                   # Database user password
-        'HOST': 'db',                        # Database host (use 'db' if using Docker)
+        'HOST': 'db',                               # Database host (use 'db' if using Docker)
         'PORT': '5432',                             # Default PostgreSQL port
     }
 }

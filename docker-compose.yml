@@ -1,4 +1,4 @@
-version: '3.8'
+# version: '3.8'
 
 services:
   web:
@@ -20,7 +20,7 @@ services:
       - inventoryManagement_network
 
   db:
-    image: postgres:13
+    image: postgis/postgis:latest
     environment:
       POSTGRES_DB: mydatabase
       POSTGRES_USER: myuser
